@@ -1,19 +1,18 @@
 {
-  "name": "rating_page",
+  "name": "week3_1",
   "version": "1.0.0",
-  "description": "Это стартовый архив для второй проектной работы по бэкенду.",
+  "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js",
-    "start": "node app.js"
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "DZ2"
-  },
-  "author": "outcast",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
   "devDependencies": {
     "nodemon": "^3.1.0"
   }
