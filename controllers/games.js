@@ -30,8 +30,8 @@ const addGameController = async (req, res) => {
     }
     await writeData("./data/games.json", req.games);
     res.send({
-        games: req.games, 
-        updated: req.updatedObject 
+        games: req.games,
+        updated: req.updatedObject
     });
 }
 
@@ -52,4 +52,11 @@ const deleteGame = async (req, res) => {
     });
 }
 
-module.exports = { sendAllGames, addGameController, deleteGame }
+const sendUpdatedGames = (req, res) => {
+    res.send({
+        games: req.games,
+        updated: req.updatedObject
+    });
+};
+
+module.exports = { sendAllGames, sendUpdatedGames,addGameController, deleteGame }
